@@ -1,9 +1,11 @@
-wiljs.me
-========
+# [wiljs.me](http://wiljs.me)
 
-Simple HTML5 with CSS3 Personal Website.
+Simple HTML5 and CSS3 personal portfolio.
 
-Acknowledges
-============
+## Acknowledges
 
 - [Belen Poyo](https://www.behance.net/Belenpoyo) - Graphic Design
+
+## License
+
+MIT

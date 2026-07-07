@@ -1,31 +1,31 @@
 # CRISTIAN WILGENHOFF
-* **Remote | UK LTD · cpwilgenhoff@gmail.com · (+44) 07493 074226**
-* **[github.com/cwilgenhoff](github.com/cwilgenhoff) · [cwilgenhoff.github.io](http://cwilgenhoff.github.io)**
+* **Remote | UK LTD · cpwilgenhoff@gmail.com · (+44) 07493 074226** 
+* **[github.com/cwilgenhoff](https://github.com/cwilgenhoff) · [cwilgenhoff.github.io](https://cwilgenhoff.github.io)**
 
 ---
 
-Staff/Principal Engineer with 15 years of experience in Node.js and TypeScript. I spent 6 years at Yum! Brands architecting global payment and menu systems that handle millions of daily orders. I specialize in simplifying complex backend architectures and building resilient infrastructure. I am a hands-on technical leader who focuses on long-term engineering strategy and mentoring rather than administrative management
+Staff/Principal Engineer with 15 years of experience across TypeScript, Node.js and React, building full-stack products at scale. I focus on resilient backend architecture and increasingly work with AI coding tools to ship faster while keeping a high quality bar. I spent 6 years across Yum! Brands and Pizza Hut Digital Ventures, working on global payment integrations and menu architecture for systems handling millions of daily orders. I specialize in simplifying complex backend architectures and building resilient infrastructure. I am a hands-on technical leader who focuses on long-term engineering strategy and mentoring rather than administrative management
 
 ---
 
 ## CORE COMPETENCIES
 * **Backend & Platform:** Temporal, Node.js, TypeScript, Nest.js, Express, GraphQL
 * **Architecture:** DDD, Hexagonal/Clean Architecture, System Audits, Roadmapping
+* **Frontend**: React, TypeScript, Redux
 * **Infrastructure:** PostgreSQL, Redis, DynamoDB, AWS, Docker, Kubernetes, Terraform
 * **Leadership:** Engineering Standards, Incident Management, Team Mentorship
+* **AI-Assisted Development:** Claude Code, AI coding tools. Directing them effectively, reviewing critically, maintaining quality
 
 ---
 
 ## EXPERIENCE
 
 ### SweatPals — Staff Engineer (Contract) | Jul 2025 – Nov 2025
-First Staff Engineer at an a16z-backed Series A fitness platform. Recruited to fix platform stability issues and set the long-term technical direction.
+First Staff Engineer at an a16z-backed Series A fitness platform, brought in to stabilise the platform and set technical direction.
 
-* **Platform Strategy:** Defined the goals and focus for the new Platform team, aiming to help other engineers ship faster and with less "cognitive load".
-* **Technical Roadmapping:** Created a detailed plan to simplify the architecture (moving toward a modular monolith) and upgrade core tech like NestJS and BullMQ.
-* **Team Leadership:** Advised the CEO on how to structure the engineering team so we could focus on stability without being constantly interrupted by product features.
-* **Incident & Security:** Acted as the technical lead during major security crises and designed the company's first clear process for handling production incidents.
-* **Engineering Standards:** Pushed for better engineering habits by introducing blameless post-mortems and "5 Whys" reviews to the leadership team.
+* **Platform & Architecture**: Defined the new Platform team's remit and a roadmap to simplify the architecture toward a modular monolith, reducing cognitive load for product engineers.
+* **Incident & Security**: Technical lead during major security incidents (including a PII exposure issue); designed the company's first production incident-response process.
+* **Engineering Standards:**  Introduced blameless post-mortems and "5 Whys" reviews to shift the team toward root-cause analysis.
 
 **Stack:** Node.js, TypeScript, Nest.js, BullMQ, AWS
 
@@ -46,29 +46,26 @@ Principal Engineer on the global payments team, integrating new payment provider
 ### Pizza Hut Digital Ventures — Principal Software Engineer (Contract) | Jun 2019 – Jul 2022
 *Progression: Senior Software Engineer → Technical Lead → Principal Software Engineer*
 
-* **Principal Engineer:** Architected the re-design of the Menu domain to support international scaling, ensuring the system could handle different menu structures across multiple countries.
+* **Principal Engineer:** Architected the re-design of the Menu domain to support international scaling, modelling complex data relationships to handle different menu structures across multiple countries.
 * **Technical Lead:** Lead developer for the UK market platform. Balanced the delivery of new customer features with the continuous cleanup of technical debt to keep the codebase maintainable.
 * **Senior Software Engineer:** Contributed to the expansion of the event-driven platform. Selected for on-site activation in India to handle the technical integration and regional requirements for a successful market launch.
 
-**Stack:** Node.js, TypeScript, Nest.js, GraphQL, Temporal, PostgreSQL, AWS
+**Stack**: Node.js, TypeScript, React, Nest.js, GraphQL, Temporal, PostgreSQL, AWS
 
 ---
 
 ### ENGINE Transformation — Senior Engineer (Contract) | Feb 2019 – Jun 2019
-Technical lead for a UK government marine project, focused on moving legacy systems to the cloud.
-
-* **Cloud Migration:** Modernized legacy Node.js services and moved them into a cloud-native architecture to improve system reliability and deployment speed.
+Senior engineer on a UK government marine project, modernising legacy Node.js services into a cloud-native architecture for improved reliability and deployment speed.
 
 ### Red Badger — Senior Software Engineer | Jun 2017 – Feb 2019
-Consulted for Tier-1 banks (HSBC and Santander) to build high-performance React and Node.js applications.
+Consulted for Tier-1 UK banks (HSBC and Santander), building secure, high-performance applications in regulated financial environments.
 
+* **Open Banking APIs**: Implemented Open Banking API specifications for Santander UK using Java / Spring Boot, building secure, compliant financial APIs to the UK's mandated regulatory standard.
 * **Enterprise Integration:** Built microservices that connected modern front-end applications with legacy banking systems, including DB2 databases and LDAP security protocols.
 * **Platform Mentorship:** Set up CI/CD pipelines and mentored the client’s internal engineering teams to ensure they could maintain and scale the platform after our engagement ended.
 
 ### Early Engineering Foundation | 2010 – 2017
-Focused on systems engineering, relational database design, and full-stack development across various industries. 
-
-* Held early software engineering roles at **Globant**, **Southworks**, **Making Sense**, **Contentment**, and **FarmDrop**, building a foundation in scalable backend architecture and data integrity.
+Focused on systems engineering, relational database design, and full-stack development across various industries at **Globant**, **Southworks**, **Making Sense**, **Contentment**, and **FarmDrop**.
 
 ---
 

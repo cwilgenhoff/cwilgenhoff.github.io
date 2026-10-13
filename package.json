@@ -1,0 +1,13 @@
+{
+  "name": "cwilgenhoff-github-io",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:cv": "node scripts/build-cv.mjs"
+  },
+  "devDependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "markdown-it": "^14.1.0",
+    "puppeteer": "^24.10.0"
+  }
+}

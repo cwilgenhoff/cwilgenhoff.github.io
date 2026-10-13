@@ -1,0 +1,188 @@
+/*
+ * Print stylesheet for the CV PDF (see scripts/build-cv.mjs).
+ *
+ * A clean, understated single-column resume: Inter throughout, one muted
+ * slate-blue accent for section rules and links, tight spacing within
+ * sections and generous space between them.
+ *
+ * The @font-face rules for Inter and the `--scale` value are injected by the
+ * build script; the auto-fit loop only turns `--scale`. Every size is in `em`
+ * so the whole document scales from the single root font-size below.
+ */
+
+:root {
+    --scale: 1;
+    font-size: calc(10.4pt * var(--scale));
+
+    --ink: #1c1e21;         /* body text            */
+    --muted: #5a636d;       /* dates, summaries     */
+    --accent: #33566f;      /* section rules, links */
+    --rule: #33566f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* --- header ---------------------------------------------------------------- */
+
+h1 {
+    margin: 0 0 0.2em;
+    font-size: 2.15em;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+}
+
+/* The two bullet lists directly under the name collapse into one contact row. */
+h1 + ul,
+h1 + ul + ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.86em;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+h1 + ul li,
+h1 + ul + ul li {
+    display: inline;
+}
+
+/* --- section headers ------------------------------------------------------- */
+
+h2 {
+    margin: 1.25em 0 0.6em;
+    padding-bottom: 0.28em;
+    font-size: 0.96em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    border-bottom: 1px solid var(--rule);
+    break-after: avoid;
+}
+
+/* --- job entries ----------------------------------------------------------- */
+
+/*
+ * Each job is wrapped in <section class="job"> by the build script. Clear
+ * whitespace between blocks (well beyond the within-block spacing), and the
+ * whole block is kept together on a page where it fits so a heading is never
+ * stranded from its first bullet.
+ */
+.job {
+    margin-top: 1.7em;
+    break-inside: avoid;
+}
+
+/* First job sits directly under the EXPERIENCE rule — no extra gap. */
+h2 + .job {
+    margin-top: 0.55em;
+}
+
+/* Company anchors the entry; role and dates share the line, lighter. */
+h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.75em;
+    margin: 0 0 0.15em;
+    font-weight: 400;
+    break-after: avoid;
+}
+
+h3 .company {
+    font-size: 1.12em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--accent);
+}
+
+h3 .role {
+    font-weight: 400;
+    color: var(--muted);
+}
+
+h3 .dates {
+    flex: none;
+    font-size: 0.9em;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+/* Role summary / progression line sits right beneath the job header. */
+h3 + p {
+    margin-top: 0.1em;
+    color: var(--muted);
+    break-before: avoid;
+}
+
+/* --- body ------------------------------------------------------------------ */
+
+p {
+    margin: 0.3em 0;
+    orphans: 2;
+    widows: 2;
+}
+
+ul {
+    margin: 0.35em 0 0.5em;
+    padding-left: 1.1em;
+}
+
+li {
+    margin: 0.2em 0;
+    padding-left: 0.15em;
+    break-inside: avoid;
+}
+
+li::marker {
+    color: var(--accent);
+    font-size: 0.9em;
+}
+
+strong {
+    font-weight: 600;
+    color: var(--ink);
+}
+
+em {
+    font-style: italic;
+    color: var(--muted);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+/* --- rules ----------------------------------------------------------------- */
+
+/*
+ * The markdown sprinkles `---` throughout. Most are redundant with the header
+ * underlines, so hide them and let whitespace do the separating. The only one
+ * kept is the divider under the header block (the single `hr` followed by the
+ * summary paragraph).
+ */
+hr {
+    display: none;
+}
+
+hr:has(+ p) {
+    display: block;
+    margin: 0.6em 0 0.9em;
+    border: none;
+    border-top: 1px solid #e2e4e7;
+}
